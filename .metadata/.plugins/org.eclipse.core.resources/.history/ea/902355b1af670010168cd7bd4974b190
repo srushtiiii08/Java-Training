@@ -120,10 +120,8 @@ public static void main(String[] args) {
 					break;
 				} else if (playChoice == 3) {
 					guitar.setPlayBehaviour(new SlapPopPlay());
-					break;
 				} else if (playChoice == 4) {
 					guitar.setPlayBehaviour(new PlayByTapping());
-					break;
 				} else {
 					System.out.println("Please select 1, 2, 3 or 4: ");
 				}
@@ -157,10 +155,8 @@ public static void main(String[] args) {
 					break;
 				} else if (tuneChoice == 4) {
 					guitar.setTuneBehaviour(new DoubleDTune());
-					break;
 				} else if (tuneChoice == 5) {
 					guitar.setTuneBehaviour(new HalfStepDownTune());
-					break;
 				} else {
 					System.out.println("Please select 1, 2, 3, 4 or 5: ");
 				}				
@@ -190,10 +186,8 @@ public static void main(String[] args) {
                     break;
                 } else if (effectChoice == 3) {
                 	guitar.setEffectBehaviour(new DistortionEffect());
-                	break;
                 } else if (effectChoice == 4) {
                 	guitar.setEffectBehaviour(new DelayEffect());
-                	break;
                 } else {
                 	 System.out.println("Please select 1, 2, 3 or 4.");
                 }

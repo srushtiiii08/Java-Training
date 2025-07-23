@@ -1,20 +1,16 @@
 package com.techlabs.test;
 
+import java.awt.Choice;
 import java.util.Scanner;
 
 import com.techlabs.model.AcousticGuitar;
 import com.techlabs.model.Bassguitar;
 import com.techlabs.model.ChorusEffect;
-import com.techlabs.model.ClassicalGuitar;
-import com.techlabs.model.DelayEffect;
-import com.techlabs.model.DistortionEffect;
 import com.techlabs.model.DoubleDTune;
 import com.techlabs.model.DropTuning;
 import com.techlabs.model.ElectricGuitar;
 import com.techlabs.model.Guitar;
 import com.techlabs.model.HalfStepDownTune;
-import com.techlabs.model.InventoryView;
-import com.techlabs.model.JazzGuitar;
 import com.techlabs.model.OpenTuning;
 import com.techlabs.model.PlayByTapping;
 import com.techlabs.model.PlayWithFingers;
@@ -36,28 +32,23 @@ public static void main(String[] args) {
 		
 		int startChoice = -1;
 		while(true) {
-			System.out.println("Enter choice (1-3): ");
+			System.out.println("Enter choice (1-2): ");
 			try {
 				startChoice = Integer.parseInt(sc.nextLine().trim());
-				if (startChoice < 1 || startChoice > 3) {
-					System.out.println("Please select 1, 2 or 3.");
+				if (startChoice < 1 || startChoice > 2) {
+					System.out.println("Please select 1 or 2.");
 					continue;
 				}
 				break;
 			} catch (NumberFormatException e) {
-				System.out.println("Invalid input! Please enter a number (1 - 2).");
+				System.out.println("Invalid input! Please enter a number (1 or 2).");
 			}
 		}
 		
-		if (startChoice == 3) {
+		if (startChoice == 2) {
 			System.out.println("Exiting..Goodbye!");
 			break;
 		}
-		
-		if (startChoice == 2) {
-            InventoryView.displayInventory();
-            continue;  
-        }
 		
 		Guitar guitar = null;
 		
@@ -66,14 +57,12 @@ public static void main(String[] args) {
 		System.out.println("1. Electric Guitar");
 		System.out.println("2. Acoustic Guitar");
 		System.out.println("3. Bass Guitar");
-		System.out.println("4. Classical Guitar");
-		System.out.println("5. Jazz Guitar");
 		System.out.println("------------------------------------");
 
 		int guitarChoice = -1;
 		
 		while(true) {
-			System.out.println("Enter choice (1-5): ");
+			System.out.println("Enter choice (1-3): ");
 			try {
 				guitarChoice = Integer.parseInt(sc.nextLine().trim());
 				if (guitarChoice == 1) {
@@ -85,17 +74,11 @@ public static void main(String[] args) {
 				} else if (guitarChoice == 3) {
 					guitar = new Bassguitar();
 					break;
-				} else if (guitarChoice == 4) {
-					guitar = new ClassicalGuitar();
-					break;
-				} else if (guitarChoice == 5) {
-					guitar = new JazzGuitar();
-					break;
 				} else {
-					System.out.println("Please select a number (1-5): ");
+					System.out.println("Please select a number (1-3): ");
 				}
 			} catch (NumberFormatException e) {
-				System.out.println("Invalid input! Please enter a number (1-5): ");
+				System.out.println("Invalid input! Please enter a number (1-3): ");
 			}
 		}
 		
@@ -120,10 +103,8 @@ public static void main(String[] args) {
 					break;
 				} else if (playChoice == 3) {
 					guitar.setPlayBehaviour(new SlapPopPlay());
-					break;
 				} else if (playChoice == 4) {
 					guitar.setPlayBehaviour(new PlayByTapping());
-					break;
 				} else {
 					System.out.println("Please select 1, 2, 3 or 4: ");
 				}
@@ -157,10 +138,8 @@ public static void main(String[] args) {
 					break;
 				} else if (tuneChoice == 4) {
 					guitar.setTuneBehaviour(new DoubleDTune());
-					break;
 				} else if (tuneChoice == 5) {
 					guitar.setTuneBehaviour(new HalfStepDownTune());
-					break;
 				} else {
 					System.out.println("Please select 1, 2, 3, 4 or 5: ");
 				}				
@@ -173,13 +152,11 @@ public static void main(String[] args) {
 		System.out.println("Select Effect:");
 		System.out.println("1. Reverb Effect");
 		System.out.println("2. Chorus Effect");
-		System.out.println("3. Distortion Effect");
-		System.out.println("4. Delay Effect");
 		System.out.println("------------------------------------");
 
 		
 		while (true) {
-			System.out.print("Enter choice (1-4): ");
+			System.out.print("Enter choice (1-2): ");
             try {
                 int effectChoice = Integer.parseInt(sc.nextLine().trim());
                 if (effectChoice == 1) {
@@ -188,17 +165,11 @@ public static void main(String[] args) {
                 } else if (effectChoice == 2) {
                     guitar.setEffectBehaviour(new ChorusEffect());
                     break;
-                } else if (effectChoice == 3) {
-                	guitar.setEffectBehaviour(new DistortionEffect());
-                	break;
-                } else if (effectChoice == 4) {
-                	guitar.setEffectBehaviour(new DelayEffect());
-                	break;
                 } else {
-                	 System.out.println("Please select 1, 2, 3 or 4.");
+                	 System.out.println("Please select 1, 2, or 3.");
                 }
             } catch (NumberFormatException e) {
-            	System.out.println("Invalid input. Please enter a number (1-4).");
+            	System.out.println("Invalid input. Please enter a number (1-3).");
             }
 		}
 		

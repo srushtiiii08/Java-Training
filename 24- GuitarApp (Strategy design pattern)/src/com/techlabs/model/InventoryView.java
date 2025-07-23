@@ -1,0 +1,30 @@
+package com.techlabs.model;
+
+public class InventoryView {
+
+	public static void displayInventory() {
+		System.out.println("\n====== Guitar Customization Inventory ======\n");
+
+        System.out.println("Available Guitar Models:");
+        System.out.println("1. Electric Guitar");
+        System.out.println("2. Acoustic Guitar");
+        System.out.println("3. Bass Guitar");
+        System.out.println("4. Classical Guitar");
+        System.out.println("5. Jazz Guitar");
+        
+        System.out.println("\nAvailable Play styles:");
+        System.out.println("1. Play with pick");
+        System.out.println("2. play with fingers");
+        System.out.println("3. Slap & Pop Play");
+        System.out.println("4. Play by tapping");
+        
+        System.out.println("\nAvailable Effects:");
+        System.out.println("1. Reverb Effect");
+        System.out.println("2. Chorus Effect");
+        System.out.println("3. Distortion Effect");
+        System.out.println("4. Delay Effect");
+        
+        System.out.println("\n==============================================");
+
+	}
+}
