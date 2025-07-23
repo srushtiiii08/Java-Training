@@ -1,0 +1,5 @@
+package com.MiniProject.model;
+
+public class EmailNotifier {
+
+}

@@ -1,0 +1,15 @@
+package com.techlabs.test;
+
+import com.techlabs.model.Circle;
+import com.techlabs.model.GreenColour;
+import com.techlabs.model.RedColour;
+import com.techlabs.model.Shape;
+import com.techlabs.model.Triangle;
+
+public class MainTest {
+public static void main(String[] args) {
+	
+	Shape redCircle = new Circle(new RedColour());
+	Shape greenTriangle = new Triangle(new GreenColour());
+}
+}

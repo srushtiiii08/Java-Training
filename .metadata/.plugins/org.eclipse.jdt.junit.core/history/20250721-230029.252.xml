@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test" project="26- JUnit Testing" tests="6" started="6" failures="0" errors="5" ignored="1">
+  <testsuite name="com.techlabs.StringProcessor.test" time="0.048" displayname="test" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]">
+    <testcase name="progress" classname="com.techlabs.StringProcessor.test" time="0.0" ignored="true" displayname="progress()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[method:progress()]"/>
+    <testcase name="testPallindrome" classname="com.techlabs.StringProcessor.test" time="0.024" displayname="testPallindrome()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[method:testPallindrome()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.techlabs.StringProcessor.StringProcessor.isPalindrome(String)" because "this.str" is null&#13;
+	at com.techlabs.StringProcessor.test.testPallindrome(test.java:20)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testsuite name="com.techlabs.StringProcessor.test$ReverseTests" time="0.021" displayname="ReverseTests" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[nested-class:ReverseTests]">
+      <testcase name="testRev1" classname="com.techlabs.StringProcessor.test.ReverseTests" time="0.003" displayname="testRev1()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[nested-class:ReverseTests]/[method:testRev1()]">
+        <error>java.lang.NullPointerException: Cannot invoke "com.techlabs.StringProcessor.StringProcessor.reverse(String)" because "this.this$0.str" is null&#13;
+	at com.techlabs.StringProcessor.test$ReverseTests.testRev1(test.java:34)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+      </testcase>
+      <testsuite name="testRev2(com.techlabs.StringProcessor.test$ReverseTests)" time="0.004" displayname="testRev2()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[nested-class:ReverseTests]/[test-template:testRev2()]">
+        <testcase name="testRev2" classname="com.techlabs.StringProcessor.test.ReverseTests" time="0.004" dynamicTest="true" displayname="repetition 1 of 3" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[nested-class:ReverseTests]/[test-template:testRev2()]/[test-template-invocation:#1]">
+          <error>java.lang.NullPointerException: Cannot invoke "com.techlabs.StringProcessor.StringProcessor.reverse(String)" because "this.this$0.str" is null&#13;
+	at com.techlabs.StringProcessor.test$ReverseTests.testRev2(test.java:39)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.IntPipeline$1$1.accept(IntPipeline.java:180)&#13;
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)&#13;
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:711)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="testRev2" classname="com.techlabs.StringProcessor.test.ReverseTests" time="0.003" dynamicTest="true" displayname="repetition 2 of 3" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[nested-class:ReverseTests]/[test-template:testRev2()]/[test-template-invocation:#2]">
+          <error>java.lang.NullPointerException: Cannot invoke "com.techlabs.StringProcessor.StringProcessor.reverse(String)" because "this.this$0.str" is null&#13;
+	at com.techlabs.StringProcessor.test$ReverseTests.testRev2(test.java:39)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.IntPipeline$1$1.accept(IntPipeline.java:180)&#13;
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)&#13;
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:711)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="testRev2" classname="com.techlabs.StringProcessor.test.ReverseTests" time="0.002" dynamicTest="true" displayname="repetition 3 of 3" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.StringProcessor.test]/[nested-class:ReverseTests]/[test-template:testRev2()]/[test-template-invocation:#3]">
+          <error>java.lang.NullPointerException: Cannot invoke "com.techlabs.StringProcessor.StringProcessor.reverse(String)" because "this.this$0.str" is null&#13;
+	at com.techlabs.StringProcessor.test$ReverseTests.testRev2(test.java:39)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.IntPipeline$1$1.accept(IntPipeline.java:180)&#13;
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:108)&#13;
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:711)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

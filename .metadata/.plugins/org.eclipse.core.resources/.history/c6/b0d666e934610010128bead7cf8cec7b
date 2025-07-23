@@ -1,0 +1,30 @@
+package com.techlabs.Festival.test;
+
+import com.techlabs.Festival.model.Diwali;
+import com.techlabs.Festival.model.Festival;
+import com.techlabs.Festival.model.FixedDeposit;
+import com.techlabs.Festival.model.Holi;
+import com.techlabs.Festival.model.IFestival;
+import com.techlabs.Festival.model.NewYear;
+import com.techlabs.Festival.model.Other;
+
+public class FixedDepositTest {
+public static void main(String[] args) {
+	
+//	Festival fest = new Festival();
+//	
+//	IFestival diwali = new Diwali();
+//	IFestival holi = new Holi();
+//	IFestival newYear = new NewYear();
+//	IFestival other = new Other();
+	
+//	fest.FestivalType(newYear);
+//	fest.FestivalType(other);
+//	fest.FestivalType(holi);
+//	fest.FestivalType(diwali);
+	
+	FixedDeposit fd1 = new FixedDeposit(1001, "Srushti", 20000, 20, new Diwali());
+	System.out.println("SimpleInterest: " +fd1.calculateSimpleInterest());
+	
+}
+}

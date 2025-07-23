@@ -1,0 +1,13 @@
+package com.techlabs.PatientRecords.model;
+
+public class StoringPatientData {
+	
+	public String format(PatientRecord record) {
+        return String.format(
+            "Patient Record:\nName: %s\nAge: %d\nDiagnosis: %s",
+            record.getName(),
+            record.getAge(),
+            record.getDiagnosis()
+        );
+    }
+}

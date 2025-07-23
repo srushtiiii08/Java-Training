@@ -1,0 +1,11 @@
+package com.MiniProject.model;
+
+public class ReorderService {
+	
+	public void reorder(Product product) {
+		int reorderAmt = 20;
+		product.setQuantity(product.getQuantity() + reorderAmt);
+		System.out.println("\nReorder placed for 20 units of " + product.getName());
+	}
+
+}

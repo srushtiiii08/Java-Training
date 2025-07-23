@@ -1,0 +1,5 @@
+package com.techlabs.EducationalSoftware.model;
+
+public interface ITeacher {
+
+}

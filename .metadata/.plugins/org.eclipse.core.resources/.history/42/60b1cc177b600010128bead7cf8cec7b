@@ -1,0 +1,9 @@
+package com.techlabs.PatientRecords.model;
+
+public class EmailNotification {
+	
+	public void email(PatientRecords records) {
+		
+	}
+
+}

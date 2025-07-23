@@ -1,0 +1,32 @@
+package com.techlabs.Grade;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+public class test {
+
+	GradeValidator gr = new GradeValidator();
+	
+	@Nested
+	class testGradeValidator {
+		
+		@ParameterizedTest
+        @ValueSource(ints = {0, 50, 70} )
+        @DisplayName("Valid pass grades")
+        void testPassGrades(int grade) { 
+			assertTrue(gr.isGradeValid((grade));
+		}
+		
+		@ParameterizedTest
+        @ValueSource(ints = {-10, 101, -43} )
+        @DisplayName("fail grades")
+        void testFailGrades(int grade) { 
+			assertFalse(gr.isGradeValid(grade));
+		}
+	}
+}

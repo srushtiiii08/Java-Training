@@ -1,0 +1,5 @@
+package com.techlabs.Festival.model;
+
+public class FixedDeposit {
+
+}

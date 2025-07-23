@@ -1,0 +1,12 @@
+package com.techlabs.model;
+
+public class Triangle extends Shape{
+
+	public Triangle(Colour colour) {
+		super(colour);
+	}
+
+	public void draw() {
+		System.out.println("Triangle filled with colour ");
+	}
+}

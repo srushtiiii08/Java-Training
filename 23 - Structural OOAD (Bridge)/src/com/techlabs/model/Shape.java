@@ -1,0 +1,14 @@
+package com.techlabs.model;
+
+//abstraction
+public abstract class Shape {
+
+	protected Colour colour;	//Bridge to Colour & protected bcz it should be accessible within the package and to subclasses in other package
+						//dependency injected of constructor
+	
+	public Shape(Colour colour) {
+		this.colour= colour;
+	}
+	
+	public abstract void draw();
+}

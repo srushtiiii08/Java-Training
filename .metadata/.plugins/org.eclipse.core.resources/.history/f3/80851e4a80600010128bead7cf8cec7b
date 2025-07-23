@@ -1,0 +1,11 @@
+package com.techlabs.LearningMgmt.model;
+
+public class VideoContent implements ContentRenderer{
+
+	@Override
+	public void contentType() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

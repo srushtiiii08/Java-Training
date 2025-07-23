@@ -1,0 +1,10 @@
+package com.techlabs.database.model;
+
+public class PosgreSQL implements IDatabase{
+
+	@Override
+	public void connect() {
+		System.out.println("Connected to PostgreSQL..");
+	}
+
+}

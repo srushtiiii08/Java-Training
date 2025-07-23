@@ -1,0 +1,10 @@
+package com.techlabs.LearningMgmt.test;
+
+import com.techlabs.LearningMgmt.model.ArticleContent;
+
+public class ContentStrategy {
+
+	public String show(ArticleContent content) {
+		return content.contentType();
+	}
+}

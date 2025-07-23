@@ -1,0 +1,5 @@
+package com.techlabs.Shape.model;
+
+public class Rectangle {
+
+}

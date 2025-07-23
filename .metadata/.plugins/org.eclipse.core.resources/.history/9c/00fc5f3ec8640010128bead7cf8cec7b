@@ -1,0 +1,26 @@
+package com.techlabs.test;
+
+import com.techlabs.model.AcousticGuitar;
+import com.techlabs.model.ElectricGuitar;
+import com.techlabs.model.Guitar;
+import com.techlabs.model.ReverbEffect;
+
+public class GuitarTest {
+public static void main(String[] args) {
+	Guitar electric = new ElectricGuitar();
+	electric.display();
+	electric.performPlay();
+	electric.performTune();
+	electric.applyEffect();
+	
+	Guitar acoustic = new AcousticGuitar();
+	acoustic.display();
+	acoustic.performPlay();
+	acoustic.performTune();
+	acoustic.applyEffect();
+	
+	System.out.println("Changing effect of Acoustics Guitar: ");
+	acoustic.setEffectBehaviour(new ReverbEffect());
+	acoustic.applyEffect();
+}
+}

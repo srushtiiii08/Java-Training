@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest (1)" project="26- JUnit Testing" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="com.techlabs.model.CalculatorTest" time="0.032" displayname="CalculatorTest" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.model.CalculatorTest]">
+    <testcase name="testAdd" classname="com.techlabs.model.CalculatorTest" time="0.018" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.model.CalculatorTest]/[method:testAdd()]"/>
+    <testcase name="testSubtraction" classname="com.techlabs.model.CalculatorTest" time="0.014" displayname="testSubtraction()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.model.CalculatorTest]/[method:testSubtraction()]">
+      <failure>
+        <expected>2.5</expected>
+        <actual>7.5</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;2.5&gt; but was: &lt;7.5&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:70)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:65)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:889)&#13;
+	at com.techlabs.model.CalculatorTest.testSubtraction(CalculatorTest.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

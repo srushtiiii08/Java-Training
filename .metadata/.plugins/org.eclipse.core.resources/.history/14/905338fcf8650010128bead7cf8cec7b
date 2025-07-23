@@ -1,0 +1,23 @@
+package com.techlabs.model;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CalculatorTest {
+	
+	Calculator cal = new Calculator();
+	
+	@Test
+	public void testAdd() {
+		int sum = cal.Addition(4, 6);
+		assertEquals(10, sum);
+	}
+	
+	@Test
+	public void testSub() {
+		int sub = cal.Subtraction(10, 2.5);
+		assertEquals(7.5, sub);
+	}
+
+}

@@ -1,0 +1,79 @@
+package com.techlabs.model;
+
+import java.util.Scanner;
+
+public class GameFacade {
+
+	private Player player1, player2;
+	private GameBoard Board;
+	private GameMechanisms mechanisms;
+	private final Scanner sc = new Scanner(System.in);   //main will only launch using a single object
+										//final bcz its reference cannot be changed
+	
+	//Game entry-point for user interaction
+	public void startGame() {
+		System.out.println("---Welcome to Tic Tac Toe!!---");
+		System.out.println("Enter Player 1 name: ");
+		String name1 = sc.nextLine().trim();
+		if (name1.isEmpty()) {
+			name1 = "Player 1";
+		}
+		System.out.println("Enter Player 2 name: ");
+		String name2 = sc.nextLine().trim();
+		if (name2.isEmpty()) {
+			name2 = "Player 2";
+		}
+		
+		player1 = new Player(name1, Symbol.X);
+		player2 = new Player(name2, Symbol.O);
+		
+		Board = new GameBoard();
+		mechanisms = new GameMechanisms(player1, player2, Board);
+		
+		gameLoop();
+	}
+	
+	//whole game sequence
+	private void gameLoop() {
+		GameStatus status = GameStatus.InProgress;
+		while (status == GameStatus.InProgress) {
+			Board.displayBoard();
+			Player player = mechanisms.getCurrentPlayer();
+			System.out.println("\n" + player.getName()+ "'s ("+player.getSymbol()+ "). Enter row and column (0-2):");
+			int row = -1, col=-1;
+			while (true) {
+				String line = sc.nextLine().trim();
+				String[] tokens = line.split("\\s+|, ");   		//Splits the input line into parts, using spaces or commas as separators. Each part should be a number
+				if (tokens.length < 2) {     //to check if player entered atleast 2 numbers
+	                System.out.println("Invalid input. Please enter row and column, e.g., 1 2");
+	                continue;
+	            }
+				try {
+	                row = Integer.parseInt(tokens[0]);    //convert the player's input into integer row and column. If not numbers, shows an error and asks again
+	                col = Integer.parseInt(tokens[1]);
+	            } catch (NumberFormatException e) {
+	                System.out.println("Invalid input. Use numbers 0, 1, 2.");
+	                continue;
+	            }
+				if (!mechanisms.isValidMove(row, col)) {
+	                System.out.println("Invalid move! Cell is either occupied or out of bounds.");
+	                continue;
+	            }
+				 break;			//if player enters valid move
+			}
+			status = mechanisms.playTurn(row, col);     //make move on board
+		}
+		Board.displayBoard();
+        finalResult(status);
+	}
+	
+	//Tells who won or if the game is a draw, using the final status value
+	private void finalResult(GameStatus status) {
+		if (status == GameStatus.Win) {
+			Player winner = mechanisms.getCurrentPlayer();   //current player made a winning move
+			System.out.println("\nResult: " + winner.getName() + " wins! Congratulations!");
+		} else if (status == GameStatus.Draw) {
+			System.out.println("\nMatch Draw!!");
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package com.techlabs.model;
+
+public class DropTuning implements ITuneBehaviour{
+
+	@Override
+	public void tune() {
+		System.out.println("Guitar tuned to Drop guitar tunes! ");
+	}
+
+}

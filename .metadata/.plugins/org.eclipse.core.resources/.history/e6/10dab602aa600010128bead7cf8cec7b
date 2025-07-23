@@ -1,0 +1,15 @@
+package com.techlabs.LearningMgmt.test;
+
+import com.techlabs.LearningMgmt.model.ArticleContent;
+import com.techlabs.LearningMgmt.model.Content;
+import com.techlabs.LearningMgmt.model.VideoContent;
+
+public class ContentTest {
+public static void main(String[] args) {
+	
+	Content con = new Content();
+	
+	ArticleContent video = new VideoContent();
+	
+}
+}

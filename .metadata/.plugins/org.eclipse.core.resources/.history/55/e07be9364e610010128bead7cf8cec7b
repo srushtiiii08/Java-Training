@@ -1,0 +1,6 @@
+package com.techlabs.database.model;
+
+public interface IDatabase {
+
+	void connect();
+}

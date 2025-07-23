@@ -1,0 +1,12 @@
+package com.MiniProject.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class InventoryService {
+
+	List<Product> products = new ArrayList<>();
+	List<INotifier> notifiers;				//HLM
+	ReorderService reorderService;
+	
+}

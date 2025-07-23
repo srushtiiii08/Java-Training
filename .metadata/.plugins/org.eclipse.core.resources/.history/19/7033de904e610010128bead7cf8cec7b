@@ -1,0 +1,5 @@
+package com.techlabs.database.model;
+
+public class Cloud {
+
+}

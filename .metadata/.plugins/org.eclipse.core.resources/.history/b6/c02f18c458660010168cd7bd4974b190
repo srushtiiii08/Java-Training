@@ -1,0 +1,48 @@
+package com.techlabs.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import com.techlabs.model.MathUtil;
+
+public class MathUtilTest {
+
+	MathUtil util = new MathUtil();
+	
+	@Test
+	@BeforeEach
+	public void before() {
+		System.out.println("New test started!");
+	}
+	
+	@Test
+	@AfterEach
+	public void after() {
+		System.out.println("Test completed!");
+	}
+	
+	@Test
+	@DisplayName("Addition test")
+	public void testAdd() {
+		assertEquals(5, util.add(3, 2));
+	}
+	
+	@Test @DisplayName("Multiplication Test")
+	public void testMultiply() {
+		assertEquals(6, util.multiply(2, 3));
+	}
+	
+	@Test @ParameterizedTest @ValueSource(ints = {2,4,6})
+	@DisplayName("Checks even number")
+	public void testEven(int input) {
+		assertTrue(util.isEven(input));
+	}
+	
+}

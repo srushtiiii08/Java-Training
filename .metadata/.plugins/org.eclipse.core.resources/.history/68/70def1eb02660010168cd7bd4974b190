@@ -1,0 +1,13 @@
+package com.techlabs.model;
+
+public class AssertAllDemo {
+
+	public void userDetails() {
+		String name = "Om";
+		int age = 33;
+		String city = "delhi";
+		
+		AssertAll("User details", () -> assertEquals("Om", name), () -> assertTrue(age>18),
+				() -> assertEquals("Mumbai", city));
+	}
+}

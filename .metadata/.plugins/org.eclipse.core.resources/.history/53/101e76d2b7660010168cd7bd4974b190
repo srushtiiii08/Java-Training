@@ -1,0 +1,38 @@
+package com.techlabs.BankAccount;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
+public class test {
+
+	BankAccount acc = new BankAccount();
+	
+	@Test
+	@BeforeAll
+	public void before() {
+		System.out.println("Java Unit Testing started");
+	}
+	
+	@Test
+	@AfterAll
+	public void after() {
+		System.out.println("Java Unit Testing completed");
+	}
+	
+	@Test @Tag("regression")
+    void test_deposit_positive_amount() {
+        acc.deposit(100.0);
+        assertEquals(100.0, acc.getBalance());
+	}
+
+    @Test @Tag("critical")
+    void test_withdraw_positive_amount() {
+        acc.deposit(200); acc.withdraw(50); 
+        assertEquals(150, acc.getBalance());
+    }
+}
