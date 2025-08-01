@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest (1)" project="26- JUnit Testing" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.techlabs.model.CalculatorTest" time="0.021" displayname="CalculatorTest" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.model.CalculatorTest]">
-    <testcase name="testAdd" classname="com.techlabs.model.CalculatorTest" time="0.017" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.model.CalculatorTest]/[method:testAdd()]"/>
-    <testcase name="testSubtraction" classname="com.techlabs.model.CalculatorTest" time="0.003" displayname="testSubtraction()" uniqueid="[engine:junit-jupiter]/[class:com.techlabs.model.CalculatorTest]/[method:testSubtraction()]"/>
-  </testsuite>
-</testrun>

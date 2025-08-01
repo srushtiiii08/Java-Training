@@ -1,8 +1,0 @@
-package com.techlabs.Festival.model;
-
-public class Festival {
-
-	public void FestivalType(IFestival fest) {
-		fest.getInterestRates();
-	}
-}

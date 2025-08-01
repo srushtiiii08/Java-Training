@@ -1,8 +1,0 @@
-package com.techlabs.LearningMgmt.model;
-
-public class Content {
-
-	public void renderContent(ContentRenderer renderer) {
-		renderer.contentType();
-	}
-}

@@ -1,6 +1,0 @@
-package com.MiniProject.model;
-
-public interface IValuationStrategy {
-
-	double calculateValue(List<Product> product);
-}

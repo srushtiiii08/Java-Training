@@ -1,8 +1,0 @@
-package com.techlabs.test;
-
-public class GuitrTest {
-public static void main(String[] args) {
-	
-	Scanner sc = new Scanner(System.in);
-}
-}
