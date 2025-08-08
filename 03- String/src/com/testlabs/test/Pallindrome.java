@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	
 	str = str.toLowerCase();
 	String rev ="";
-	for (int i=str.length()-1; i>=0; i--) {						//cursor starts from last character
+	for (int i=str.length()-1; i>=0; i--) {				//cursor starts from last character
 		rev+=str.charAt(i);		
 	}
 	if (str.equalsIgnoreCase(rev)) {

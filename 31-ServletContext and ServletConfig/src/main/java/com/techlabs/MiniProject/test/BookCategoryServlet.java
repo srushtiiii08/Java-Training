@@ -105,7 +105,7 @@ public class BookCategoryServlet extends HttpServlet{
         
         pw.println("<p><strong>Total Visitors:</strong> " + totalVisitors + "</p>");
         pw.println("<p><strong>App Version:</strong> " + appVersion + "</p>");
-        pw.println("<p><a href='welcome'>Back to Home</a></p>");
+//        pw.println("<p><a href='welcome'>Back to Home</a></p>");
         pw.println("</body></html>");
     }
     
